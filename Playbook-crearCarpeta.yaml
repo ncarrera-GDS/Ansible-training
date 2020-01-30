@@ -1,0 +1,10 @@
+-
+  name: prueba de crear directorio
+  hosts: localhost
+  tasks:
+    -  name: ansible create directory example
+       file:
+         name: Carpeta-Nueva
+         path: /home/ncarrera
+         state: directory
+         mode: 0755
