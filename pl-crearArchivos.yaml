@@ -1,0 +1,13 @@
+-
+  name: Crear Archivos
+  hosts: localhost
+  tasks:
+    -
+      name: Crear Archivos
+      file:
+        path: /mnt/c/Users/JD911MJ/Documents/Ansible/EjCoach/Ansible-training/'{{item}}'
+        state: touch        
+      loop:
+        - file1.txt
+        - file2.txt
+        - file3.txt
